@@ -1,0 +1,13 @@
+file_format: "1"
+id: MOKETA
+name: MOKETA
+type: shield
+url: https://github.com/inpudiy/MOKETA
+requires: [ pro_micro ]
+features:
+- keys
+- underglow
+- studio
+outputs:
+- usb
+- ble
