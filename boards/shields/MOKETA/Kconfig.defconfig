@@ -38,6 +38,9 @@ config ZMK_RGB_UNDERGLOW_AUTO_OFF_IDLE
 config ZMK_RGB_UNDERGLOW_AUTO_OFF_USB
     default y
 
+config ZMK_CHECK_BATTERY_BEH
+    bool "Enable custom &check_bat implementation"
+
 #ZMK_RGB_UNDERGLOW
 endif
 

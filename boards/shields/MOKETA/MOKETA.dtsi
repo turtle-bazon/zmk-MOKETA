@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "MOKETA-layout.dtsi"
+#include "check_battery.dtsi"
 
 &MOKETA_layout { 
     transform = <&default_transform>;
