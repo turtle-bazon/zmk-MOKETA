@@ -19,30 +19,10 @@ config USB_DEVICE_PID
 	default "0xFEED"
 
 config USB_DEVICE_MANUFACTURER
-	default "inpudiy"
-
-	if ZMK_RGB_UNDERGLOW
-
-config ZMK_RGB_UNDERGLOW_EXT_POWER
-    default y
-
-config ZMK_RGB_UNDERGLOW_BRT_MAX
-    default 50
-
-config ZMK_RGB_UNDERGLOW_ON_START
-    default y
-
-config ZMK_RGB_UNDERGLOW_AUTO_OFF_IDLE
-    default y
-
-config ZMK_RGB_UNDERGLOW_AUTO_OFF_USB
-    default y
+	default "turtle"
 
 config ZMK_CHECK_BATTERY_BEH
     bool "Enable custom &check_bat implementation"
-
-#ZMK_RGB_UNDERGLOW
-endif
 
 endif
 
