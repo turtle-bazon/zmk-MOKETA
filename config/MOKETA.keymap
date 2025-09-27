@@ -7,8 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define DEF 0
 #define LWR 1
@@ -116,13 +114,13 @@
             >;
         };
 
-        adjust_layer {
-            label = "ADJ";
+        flayer {
+            label = "F";
             bindings = <
-&bootloader   &sys_reset    &studio_unlock  &none         &none         &none                         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &none            &none  &none  &none
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &none  &none  &none
-&out OUT_TOG  &none         &none           &none         &none         &none                         &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &none  &none  &none
-                                                          &trans        &none         &trans  &trans  &none            &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F10                  &trans  &trans  &trans  &kp F14  &kp F15  &trans
+&kp F12  &trans  &trans  &trans  &trans  &to 2                    &to 2   &trans  &trans  &kp F16  &kp F17  &trans
+&trans   &kp F5  &kp F6  &kp F7  &kp F8  &kp F9                   &trans  &trans  &trans  &trans   &trans   &trans
+                                 &trans  &trans   &trans  &trans  &trans  &trans
             >;
         };
 
