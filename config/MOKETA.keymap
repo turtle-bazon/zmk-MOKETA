@@ -117,7 +117,7 @@
         flayer {
             label = "F";
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F10                  &trans  &trans  &trans  &kp F14  &kp F15  &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F10                  &check_bat &trans  &trans  &kp F14  &kp F15  &trans
 &kp F12  &trans  &trans  &trans  &trans  &to 2                    &to 2   &trans  &trans  &kp F16  &kp F17  &trans
 &trans   &kp F5  &kp F6  &kp F7  &kp F8  &kp F9                   &trans  &trans  &trans  &trans   &trans   &trans
                                  &trans  &trans   &trans  &trans  &trans  &trans
