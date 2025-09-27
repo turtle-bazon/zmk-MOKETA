@@ -17,13 +17,6 @@
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-#if IS_ENABLED(CONFIG_ZMK_CHECK_BATTERY_BEH)
-// NOTE(sqd): User must implement this functions in their own driver.
-#else
-void show_battery() {}
-void hide_battery() {}
-#endif
-
 static int behavior_check_battery_init(const struct device *dev) { return 0; };
 
 static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,

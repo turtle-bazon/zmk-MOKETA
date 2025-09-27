@@ -25,6 +25,7 @@
 #include <zmk/keymap.h>
 #include <zmk/usb.h>
 #include <zmk/workqueue.h>
+#include "check_battery.h"
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
@@ -271,6 +272,9 @@ K_WORK_DELAYABLE_DEFINE(usb_conn_work, usb_connection_handler);
 ZMK_LISTENER(usb_conn_state_listener, usb_connection_listener)
 ZMK_SUBSCRIPTION(usb_conn_state_listener, zmk_usb_conn_state_changed);
 
+
+#if IS_ENABLED(CONFIG_ZMK_CHECK_BATTERY_BEH)
+#else
 void show_battery() {
     k_work_schedule_for_queue(&animation_work_q, &battery_animation_work, K_NO_WAIT);
 }
@@ -278,3 +282,5 @@ void show_battery() {
 void hide_battery() {
     // Optionally implement to turn off LEDs or any other behavior if needed
 }
+#endif
+
