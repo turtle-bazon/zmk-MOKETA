@@ -9,6 +9,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &MOKETA_layout;
+	zmk,backlight = &backlight;
 	};
 
     default_transform: keymap_transform_0 {
