@@ -25,7 +25,7 @@
 #include <zmk/keymap.h>
 #include <zmk/usb.h>
 #include <zmk/workqueue.h>
-#include <zmk/check_battery.h>
+#include "zmk/check_battery.h"
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
