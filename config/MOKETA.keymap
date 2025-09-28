@@ -31,52 +31,14 @@
     combos {
         compatible = "zmk,combos";
 
-        to_game_layer {
-            bindings = <&to 4>;
-            key-positions = <27 14>;
-            layers = <0>;
+        ju-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 7>;
         };
 
-        to_default_layer {
-            bindings = <&to 0>;
-            key-positions = <15 3>;
-            layers = <4>;
-        };
-
-        combo_delete {
-            bindings = <&kp DEL>;
-            key-positions = <37 38>;
-            layers = <0>;
-        };
-
-        combo_backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <36 37>;
-            layers = <0>;
-        };
-
-        combo_cs_mic {
-            bindings = <&kp K>;
-            key-positions = <37 38>;
-            layers = <4>;
-        };
-
-        combo_copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <2 3 4>;
-            layers = <0>;
-        };
-
-        combo_paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <2 4>;
-            layers = <0>;
-        };
-
-        combo_cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <2 3>;
-            layers = <0>;
+        fr-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 4>;
         };
     };
 };
